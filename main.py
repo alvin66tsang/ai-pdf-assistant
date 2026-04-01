@@ -10,7 +10,7 @@ st.title("AI PDF Assistant")
 
 with st.sidebar:
     openai_api_key = st.text_input("Enter your OpenAI API key", type="password", value=os.getenv("OPENAI_API_KEY"))
-    st.markdown("[Get you API Key](https://platform.openai.com/api-keys")
+    st.markdown("[Get you API Key](https://platform.openai.com/api-keys)")
 
 if "chat_history" not in st.session_state:
     st.session_state["chat_history"] = []
